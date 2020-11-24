@@ -21,7 +21,7 @@ function checkDeleteButton() {
 
 function addDeleteButton(li) {
   let bttn = document.createElement("button");
-  bttn.style.background="url('img/eliminar.png')"; 
+  bttn.style.background = "url('img/eliminar.png')";
   // bttn.textContent = "Delete";
   bttn.classList.add("delete");
   bttn.onclick = removeParent;
@@ -30,16 +30,16 @@ function addDeleteButton(li) {
 
 function createListElement() {
   var li = document.createElement("li");
-  if (input.value.length <= 82){
-  li.appendChild(document.createTextNode(input.value + "  "));
-  ul.appendChild(li);
-  input.value = "";
-  addDeleteButton(li);}
-  else{
-  alert('your task seems to be too long, make sure it is less than 82 characters');
-   
-  }
-  
+  // if (input.value.length <= 82) {
+    li.appendChild(document.createTextNode(input.value + "  "));
+    ul.appendChild(li);
+    input.value = "";
+    addDeleteButton(li);
+  // } else {
+  //   alert(
+  //     "your task seems to be too long, make sure it is less than 82 characters"
+  //   );
+  // }
 }
 
 function tachar(e) {
@@ -66,10 +66,8 @@ function addListAfterKeypress(event) {
 }
 
 function clear() {
-  ul.innerHTML= "";
+  ul.innerHTML = "";
 }
-
-
 
 checkDeleteButton();
 
