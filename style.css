@@ -25,11 +25,12 @@ body {
 
 .done {
   text-decoration: line-through;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 5px;
 }
 
 button {
   text-decoration: none !important;
+  
 }
 .botones {
   justify-items: center;
@@ -43,7 +44,10 @@ button {
 }
 
 .delete {
+  justify-self: right;
+  margin-left: 4px;
   margin-top: 4px;
+  margin-right: 4px;
   border-radius: 0em;
   border-style: none;
   width: 16px;
@@ -65,22 +69,21 @@ ul {
   border-radius: 12px;
 }
 
-li {word-wrap: break-word; 
+li {word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; 
   white-space:wrap; 
-  text-overflow:clip;
+  width: 100%;
   
   display: flex;
   justify-content: space-between;
   justify-self: center;
 }
 
-li a {
-  white-space: normal;
-  float: left;
-  width: 100%;
-  height: auto;
-  word-wrap: break-word;
-}
 
 li:hover {
   cursor: pointer;
