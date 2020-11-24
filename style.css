@@ -1,0 +1,100 @@
+
+
+h1,p{
+  color: burlywood;
+  grid-column-start: 2;
+text-align: center;
+}
+
+body{
+  font-family: 'Grandstander', cursive;
+display: grid;
+grid-template-columns: 10% 80% 10%;
+justify-items: center;
+background-color: brown;
+
+}
+
+#enter{
+  border-radius: 6px;
+  margin-right: 24px;
+  /* margin-left: 24px; */
+ 
+}
+
+#deleteAll{
+  border-radius: 6px;
+
+}
+
+
+.done{
+  text-decoration: line-through;
+}
+button{
+
+text-decoration: none!important;
+
+}
+.botones{
+  justify-items: center;
+  grid-column-start: 2;
+  background-color: lemonchiffon;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+border-radius: 12px;}
+
+
+.delete
+  {
+    border-radius: 0em;
+    border-style: none;
+    width:16px;
+    height:16px;
+  } 
+
+
+ul{
+  grid-column-start: 2;
+  min-width: 25%;
+  max-width: 50%;
+  align-self: center;
+  background-color: darksalmon;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 12px;
+}
+
+
+
+li { 
+ word-wrap: normal;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  
+}
+
+
+
+li:hover {
+cursor: pointer;
+
+}
+
+.navegacion
+{
+  grid-column-start: span 3;
+justify-self: right;
+
+}
+
+.navegacion button{
+background-color: transparent;
+border: none;
+
+}
