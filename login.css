@@ -1,0 +1,31 @@
+html,body{
+    height: 100%;
+}
+
+h1,
+p {
+  color: burlywood;
+  grid-column-start: 2;
+  text-align: center;
+}
+
+body {
+  font-family: "Grandstander", cursive;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  justify-items: center;
+  background-color: brown;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-column-start: 2;
+
+}
+
+#password{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
