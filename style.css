@@ -13,12 +13,19 @@ body {
   grid-template-columns: 10% 80% 10%;
   justify-items: center;
   background-color: brown;
+  
+  background-color: #a52a2a;
+background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* background-image: url("https://www.transparenttextures.com/patterns/dimension.png"); */
+/* background-image: url("https://www.transparenttextures.com/patterns/food.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #enter {
   border-radius: 6px;
   margin-right: 24px;
-  /* margin-left: 24px; */
+  margin-left: 22px;
 }
 
 #deleteAll {
@@ -45,6 +52,16 @@ button {
   border-radius: 12px;
 }
 
+@media only screen and (max-width: 1010px) {
+
+  .botones{ 
+    justify-self: center;
+    padding-left: 150px;
+  padding-right: 150px;
+  }
+
+}
+
 .delete {
   justify-self: right;
   margin-left: 4px;
@@ -57,7 +74,10 @@ button {
   padding-right: 10px;
 }
 
+#userinput{
+border-radius: 8px;
 
+}
 
 ul {
   grid-column-start: 2;
@@ -101,3 +121,4 @@ li:hover {
   background-color: transparent;
   border: none;
 }
+
